@@ -1,5 +1,5 @@
 
-  window.onload = setInterval(start,1000);
+  window.onload = setInterval(start,500);
   
 
 
@@ -31,7 +31,7 @@
   
 
 
-  nowyDiv.className = losoweCoiny;
+  nowyDiv.className = 'obiekt'+losoweCoiny;
 
   // nowyDiv.className = className;
   document.body.appendChild(nowyDiv);
