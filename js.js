@@ -3,6 +3,7 @@
   
 
 
+
   function start(){
 
   //Zapamietuje wysokosc i szerokosc ekranu w zmiennych
@@ -15,13 +16,27 @@
   //obiekt pojawia sie 120px nad ekranem
   var y = -120;
 
+  //var wynik = document.createElement('div');
+  //wynik.className = 'wyswietlacz';
+  //document.body.appendChild(wynik);
 
   // var className = 'block';
   var nowyDiv = document.createElement('div');
+
+
+  var losoweCoiny = Math.round(Math.random()*2);
+
+
+
+  
+
+
+  nowyDiv.className = losoweCoiny;
+
   // nowyDiv.className = className;
   document.body.appendChild(nowyDiv);
   // var klocek = document.querySelector('.'+className);
-
+  console.log(losoweCoiny);
 
   nowyDiv.style.top=y+"px";
   nowyDiv.style.left=x+"px";
@@ -32,6 +47,9 @@
     console.log("+1");
     return false;
     });
+
+
+//koniec poprawek
 
 
 
