@@ -4,7 +4,7 @@
 
 $(document).ready(function(){
 
-  var speed=6000;
+  var speed=5000;
   var howOften=1000;
   var score = 0;
 
@@ -14,7 +14,7 @@ $(document).ready(function(){
     $('#scoreLabel').html('wynik: '+score);
   },10);
 
-  var startInterval = setInterval(start,200);
+  var startInterval = setInterval(start,100);
   
 
       var count = 60; // ustawiłem licznik 60 sekund gry tak jak miało być
@@ -39,6 +39,24 @@ $(document).ready(function(){
           }
 
 function start(){
+
+
+  if (score<=50){
+speed=4500;}
+if (score>50&&score<=100){
+speed=4000;}
+if (score>100&&score<=150){
+speed=3500;}
+if (score>150&&score<=200){
+speed=3000;}
+if (score>200&&score<=250){
+speed=2500;}
+if (score>250&&score<=300){
+speed=2000;}
+if (score>300&&score<=350){
+speed=1500;}
+if (score>350&&score<=400){
+speed=1000;}
 
   //Zapamietuje wysokosc i szerokosc ekranu w zmiennych
   var wysokoscKlienta = window.innerHeight;

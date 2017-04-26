@@ -20,7 +20,7 @@
 .speed2{
     transition: transform 1.5s linear;
 }*/
-*{cursor: url(images/przyciety.png) 50 50, pointer;}
+*{cursor: url(images/rsz_wallet.png) 50 50, pointer;}
 
 .obiekt0{
     position: absolute;
