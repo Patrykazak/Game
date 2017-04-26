@@ -11,7 +11,7 @@ $(document).ready(function(){
   //$('#scoreLabel').html(score);
 
   var wynikInterval = setInterval(function(){
-    $('#scoreLabel').html('wynik: '+score);
+    $('#scoreLabel').html(score);
   },10);
 
   var startInterval = setInterval(start,100);
@@ -33,6 +33,7 @@ $(document).ready(function(){
               clearInterval(wynikInterval)
               clearInterval(counter); //zatrzymanie licznika i wraca
               clearInterval(startInterval); //zatrzymanie licznika i wraca
+              alert("Game Over!");
               return;
             }
             --count;
