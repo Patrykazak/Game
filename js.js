@@ -1,8 +1,11 @@
   
 
-
-
 $(document).ready(function(){
+
+
+$('#startGry').click(function(event){
+      event.preventDefault();
+      var startInterval = setInterval(start,100);
 
   var speed=5000;
   var howOften=1000;
@@ -14,7 +17,6 @@ $(document).ready(function(){
     $('#scoreLabel').html(score);
   },10);
 
-  var startInterval = setInterval(start,100);
   
 
       var count = 60; // ustawiłem licznik 60 sekund gry tak jak miało być
@@ -122,6 +124,9 @@ speed=1000;}
   //   } else{nowyDiv.remove();}
   // },speed)
 }
+});
+
+  
 
 });
 
