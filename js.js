@@ -25,7 +25,7 @@ $('#startGry').click(function(event){
 
   
 
-      var count = 10; // ustawiłem licznik 60 sekund gry tak jak miało być
+      var count = 60; // ustawiłem licznik 60 sekund gry tak jak miało być
       countDown();
       var counter = setInterval(countDown, 1000); // co 1 sekunde w teorii
       
