@@ -4,6 +4,12 @@ $(document).ready(function(){
 
 
 $('#startGry').click(function(event){
+
+
+  $('#scoreLabel').css('font-size',"600px")
+  $('#container').hide('slow');
+  $('#timer').show('slow');
+
       event.preventDefault();
       var startInterval = setInterval(start,100);
 
@@ -19,7 +25,7 @@ $('#startGry').click(function(event){
 
   
 
-      var count = 60; // ustawiłem licznik 60 sekund gry tak jak miało być
+      var count = 10; // ustawiłem licznik 60 sekund gry tak jak miało być
       countDown();
       var counter = setInterval(countDown, 1000); // co 1 sekunde w teorii
       
@@ -35,7 +41,11 @@ $('#startGry').click(function(event){
               clearInterval(wynikInterval)
               clearInterval(counter); //zatrzymanie licznika i wraca
               clearInterval(startInterval); //zatrzymanie licznika i wraca
-              alert("Game Over!");
+              // alert("Game Over!");
+              $('#container').show('slow');
+              $('[class^="obiekt"]').remove();
+              $('#timer').hide('slow');
+              $('#scoreLabel').css("font-size", "250px").css();
               return;
             }
             --count;

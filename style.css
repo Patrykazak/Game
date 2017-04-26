@@ -93,7 +93,7 @@
 }
 
 #scoreLabel{
-    font-size: 500px;
+    font-size: 600px;
   z-index: 20;
   font-family: arial;
   color: #d7e4d9;
@@ -101,6 +101,10 @@
   width: 100%;
   text-align: center;
 }
+
+/*#scoreLabelPlus{
+    font-size: 100px;
+}*/
 
 #timer{
     color:gold;
@@ -137,10 +141,11 @@
     left: 50%;
     top:50%;
     transform: translate(-50%,-50%);
+    cursor:pointer;
 
 }
 
-input[type=submit]
+.submita
 {
     width: 300px;
     background-color: #2ecc71;
@@ -155,24 +160,15 @@ input[type=submit]
     outline: none;
 }
 
-input[type=submit]:focus
+.submita:focus
 {
     -webkit-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
     -moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
     box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
 }
 
-input[type=submit]:hover
+.submita:hover
 {
-    background-color: #37b93d;
-}
-
-input::-webkit-input-placeholder
-{
-    color: #999;
-}
-input:focus::-webkit-input-placeholder
-{
-    color: #428C42;
-}
+    background-color: #349CDB;
+/*}*/
 
