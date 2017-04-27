@@ -11,7 +11,7 @@ $(document).ready(function(){
     $('#timer').show('slow');                  //show timer
 
     event.preventDefault();  //prevent default for event
-
+    
     //start generating 10 objects per second
     var startInterval = setInterval(start,100);
 
@@ -87,6 +87,8 @@ $(document).ready(function(){
       // we give random class obiekt[0-2] to our empty object
       nowyDiv.className = 'obiekt'+losoweCoiny;
 
+      nowyDiv.id = 'obiekt';
+
       // attaching new personalized div to body
       document.body.appendChild(nowyDiv);
       
@@ -102,7 +104,7 @@ $(document).ready(function(){
         //dolar | red coin | avoid
         if(nowyDiv.className=='obiekt0'){
           nowyDiv.remove(nowyDiv);
-          count-=2; //steal 2 seconds from timer
+          gameplayTime-=2; //steal 2 seconds from timer
           score-=5;
         }
 

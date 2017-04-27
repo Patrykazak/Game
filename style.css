@@ -1,85 +1,29 @@
 
-
-/*body > *{
-	position: absolute;
-    height:100px;
-	width:100px;
-    max-width: 100%;
-    max-height: 100%;
-    background-image: url("images/Dollar-Red.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    object-fit: contain;
-}*/
-
-/*.speed1{
-    transition: transform 3s linear;
-}
-
-.speed2{
-    transition: transform 1.5s linear;
-}*/
 *{cursor: url(images/rsz_wallet.png) 50 50, pointer;}
 
-.obiekt0{
+#obiekt{
     position: absolute;
     height:70px;
     width:70px;
     max-width: 100%;
     max-height: 100%;
-    background-image: url("images/Dollar-Red.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     object-fit: contain;
 }
-/*.obiekt0:hover{
-    height:10px;
-    width: 10px;
-    margin: 50px;
-    transition:all 0.2s ease;
-}*/
+
+.obiekt0{
+    background-image: url("images/Dollar-Red.png");
+}
 
 .obiekt1{
-    position: absolute;
-    height:70px;
-    width:70px;
-    max-width: 100%;
-    max-height: 100%;
     background-image: url("images/Pound-Orange.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    object-fit: contain;
 }
-
-/*.obiekt1:hover{
-    height:10px;
-    width: 10px;
-    margin: 50px;
-    transition:all 0.2s ease;
-}*/
 
 .obiekt2{
-    position: absolute;
-    height:70px;
-    width:70px;
-    max-width: 100%;
-    max-height: 100%;
     background-image: url("images/Euro-Green.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    object-fit: contain;
 }
-
-/*.obiekt2:hover{
-    height:10px;
-    width: 10px;
-    margin: 50px;
-    transition:all 0.2s ease;
-}*/
 
 .background-gry{
     width: 100%;
@@ -102,23 +46,12 @@
   text-align: center;
 }
 
-/*#scoreLabelPlus{
-    font-size: 100px;
-}*/
-
 #timer{
     color:gold;
     font-size: 70px;
     position: absolute;
     z-index: 100;
 }
-
-/*.wyswietlacz{
-    position: fixed;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}*/
 
 ::-webkit-scrollbar { 
     display: none; 
