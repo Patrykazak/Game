@@ -38,12 +38,12 @@
 
 #scoreLabel{
     font-size: 600px;
-  z-index: 20;
-  font-family: arial;
-  color: #d7e4d9;
-  user-select: none;
-  width: 100%;
-  text-align: center;
+    z-index: 20;
+    font-family: arial;
+    color: #d7e4d9;
+    user-select: none;
+    width: 100%;
+    text-align: center;
 }
 
 #timer{
@@ -62,8 +62,8 @@
 #container
 {
     background-color: #2c3e50 ;
-    width: 800px;
-    padding: 50px;
+    width: 65%;
+    padding: 2%;
     margin:auto;
     -webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
     -moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
@@ -84,7 +84,8 @@
     font-size:20px;
     color: white;
     padding: 15px 10px;
-    margin-top: 20px;
+    margin-top: 1%;
+    margin-bottom: 1%;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -103,12 +104,11 @@
 {
     background-color: #349CDB;}
 
-img{
-    display: inline-block;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    width:100%;
-    height: 100%;
+    img{
+        display: inline-block;
+        width:100%;
+        height: auto;
+        /*margin-bottom: 1%;*/
+        vertical-align: middle; /*naprawa dziwnego marginu na dole*/
 }
-/*}*/
 
