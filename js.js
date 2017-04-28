@@ -9,6 +9,7 @@ $(document).ready(function(){
     $('#scoreLabel').css('font-size',"600px")  //show score to original size
     $('#container').hide('slow');              //hide menu
     $('#timer').show('slow');                  //show timer
+    $('#topscore').html(localStorage.getItem('maxscore'));
 
     event.preventDefault();  //prevent default for event
     
@@ -45,6 +46,9 @@ $(document).ready(function(){
         $('[class^="obiekt"]').remove();                    //remove all objects with class starting with 'obiekt'
         $('#timer').hide('slow');                           //hide timer
         $('#scoreLabel').css("font-size", "250px");         //resize score and show it above menu 
+        
+   
+
         return;
         }
         --gameplayTime;   //decrease timer by 1 after 1 second
@@ -118,6 +122,17 @@ $(document).ready(function(){
         if(nowyDiv.className=='obiekt2'){
           nowyDiv.remove(nowyDiv);
           score+=2;}
+
+
+        localStorage.getItem('maxscore');
+        if (score>localStorage.getItem('maxscore')){
+          localStorage.setItem('maxscore',score);
+          $('#topscore').html(score);
+        } 
+        else {
+          $('#topscore').html(localStorage.getItem('maxscore'));
+        }
+
 
         // return false;<-------------------------------------------------------------------------------------------------
       }); //removeCoin end
