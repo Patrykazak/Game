@@ -124,7 +124,7 @@ $(document).ready(function(){
           score+=2;}
 
 
-        localStorage.getItem('maxscore');
+        // localStorage.getItem('maxscore');
         if (score>localStorage.getItem('maxscore')){
           localStorage.setItem('maxscore',score);
           $('#topscore').html(score);
@@ -133,8 +133,6 @@ $(document).ready(function(){
           $('#topscore').html(localStorage.getItem('maxscore'));
         }
 
-
-        // return false;<-------------------------------------------------------------------------------------------------
       }); //removeCoin end
     } //start end
   }); //click event end on Play button
